@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="4dp"
+        android:orientation="vertical"
+        android:background="@drawable/brothers"
+
+        >
+
+
+
+        <TextView
+            android:id="@+id/bar_list_item_barName"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="left"
+            android:text="@string/test_caps"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+         />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="54"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@color/gray" />
+            <!--<View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="44"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@color/gray" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="37"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@color/gray" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="23"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@color/gray" />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bar_list_item_bottomViewGroup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/low_transparency_black"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:id="@+id/bar_list_item_ladiesRelativeLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="2dp" >
+
+                <TextView
+                    android:id="@+id/bar_list_item_percentLadiesTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="16dp"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="@string/percent_ladies" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/percent_ladies"
+                    android:src="@drawable/ladies_scale" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bar_list_item_gentsRelativeLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="4" >
+
+                <TextView
+                    android:id="@+id/bar_list_item_percentGentsTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="16dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:text="@string/percent_gents" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/percent_gents"
+                    android:src="@drawable/gents_scale" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/gray" />
+
+            <ImageView
+                android:id="@+id/bar_list_item_lineLengthImageView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6.2"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/line_length"
+                android:src="@drawable/line1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/gray" />-->
+
+            <ImageView
+                android:id="@+id/list_item_bar_capacityImageView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="5"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/capacity"
+                android:src="@drawable/capacity10" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:layout_weight="4"
+                android:paddingBottom="0dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/bar_list_item_coverCostTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/cover_amount_text"
+                    android:textColor="@color/gold" />
+
+                <TextView
+                    android:id="@+id/bar_list_item_coverTextTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/cover_text"
+                    android:textColor="@color/light_gray"
+                    android:textSize="13sp"
+                    android:textScaleX="1.1" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
